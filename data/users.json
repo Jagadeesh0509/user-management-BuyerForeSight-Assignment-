@@ -1,0 +1,42 @@
+[
+  {
+    "id": "8d7b9a9e-2c8a-4b07-9c8f-12f58f0b1001",
+    "name": "Aarav Mehta",
+    "email": "aarav.mehta@example.com",
+    "age": 27,
+    "createdAt": "2026-03-25T14:30:00.000Z",
+    "updatedAt": "2026-03-25T14:30:00.000Z"
+  },
+  {
+    "id": "8d7b9a9e-2c8a-4b07-9c8f-12f58f0b1002",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@example.com",
+    "age": 31,
+    "createdAt": "2026-03-25T14:35:00.000Z",
+    "updatedAt": "2026-03-25T14:35:00.000Z"
+  },
+  {
+    "id": "8d7b9a9e-2c8a-4b07-9c8f-12f58f0b1003",
+    "name": "Rohan Verma",
+    "email": "rohan.verma@example.com",
+    "age": 24,
+    "createdAt": "2026-03-25T14:40:00.000Z",
+    "updatedAt": "2026-03-25T14:40:00.000Z"
+  },
+  {
+    "id": "8d7b9a9e-2c8a-4b07-9c8f-12f58f0b1004",
+    "name": "Neha Kapoor",
+    "email": "neha.kapoor@example.com",
+    "age": 29,
+    "createdAt": "2026-03-25T14:45:00.000Z",
+    "updatedAt": "2026-03-25T14:45:00.000Z"
+  },
+  {
+    "id": "67594cb9-6717-41dc-851a-2e580c1abee4",
+    "name": "Karan Malhotra",
+    "email": "karan.malhotra@example.com",
+    "age": 26,
+    "createdAt": "2026-03-25T15:26:58.718Z",
+    "updatedAt": "2026-03-25T15:26:58.718Z"
+  }
+]

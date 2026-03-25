@@ -1,0 +1,122 @@
+@baseUrl = http://localhost:3000
+@userId = 8d7b9a9e-2c8a-4b07-9c8f-12f58f0b1001
+
+### Health check by listing all users
+GET {{baseUrl}}/users
+
+### Search users by name or email
+GET {{baseUrl}}/users?search=priya
+
+### Sort users by name ascending
+GET {{baseUrl}}/users?sort=name&order=asc
+
+### Get a single user by id
+GET {{baseUrl}}/users/{{userId}}
+
+### Create a new user
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "name": "Karan Malhotra",
+  "email": "karan.malhotra@example.com",
+  "age": 26
+}
+
+### Update an existing user
+PUT {{baseUrl}}/users/{{userId}}
+Content-Type: application/json
+
+{
+  "name": "Aarav Mehta Updated",
+  "email": "aarav.mehta.updated@example.com",
+  "age": 28
+}
+
+### Delete a user
+DELETE {{baseUrl}}/users/{{userId}}
+
+### Validation test: missing name
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "email": "invalid@example.com",
+  "age": 22
+}
+
+### Validation test: duplicate email
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "name": "Duplicate User",
+  "email": "priya.sharma@example.com",
+  "age": 30
+}
+
+### Validation test: invalid sort field
+GET {{baseUrl}}/users?sort=age&order=asc
+
+### Not found test
+GET {{baseUrl}}/users/does-not-exist
+
+### Health check by listing all users
+GET {{baseUrl}}/users
+
+### Search users by name or email
+GET {{baseUrl}}/users?search=priya
+
+### Sort users by name ascending
+GET {{baseUrl}}/users?sort=name&order=asc
+
+### Get a single user by id
+GET {{baseUrl}}/users/{{userId}}
+
+### Create a new user
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "name": "Karan Malhotra",
+  "email": "karan.malhotra@example.com",
+  "age": 26
+}
+
+### Update an existing user
+PUT {{baseUrl}}/users/{{userId}}
+Content-Type: application/json
+
+{
+  "name": "Aarav Mehta Updated",
+  "email": "aarav.mehta.updated@example.com",
+  "age": 28
+}
+
+### Delete a user
+DELETE {{baseUrl}}/users/{{userId}}
+
+### Validation test: missing name
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "email": "invalid@example.com",
+  "age": 22
+}
+
+### Validation test: duplicate email
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "name": "Duplicate User",
+  "email": "priya.sharma@example.com",
+  "age": 30
+}
+
+### Validation test: invalid sort field
+GET {{baseUrl}}/users?sort=age&order=asc
+
+### Not found test
+GET {{baseUrl}}/users/does-not-exist
